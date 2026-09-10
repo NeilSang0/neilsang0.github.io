@@ -11,17 +11,17 @@
    Only transform animates, and prefers-reduced-motion stops it. */
 .lg-field{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
 .lg-field b{position:absolute;display:block;border-radius:50%;will-change:transform}
-.lg-1{width:120vmax;height:120vmax;left:-25vmax;top:-40vmax;
-  background:radial-gradient(closest-side,rgba(242,190,140,.42),rgba(242,190,140,.16) 45%,rgba(242,190,140,0) 72%);
+.lg-1{width:62vmax;height:62vmax;left:-8vmax;top:-14vmax;
+  background:radial-gradient(closest-side,rgba(242,190,140,.55),rgba(242,190,140,.16) 45%,rgba(242,190,140,0) 72%);
   animation:lg-a 16s ease-in-out infinite alternate}
-.lg-2{width:105vmax;height:105vmax;right:-30vmax;top:-15vmax;
-  background:radial-gradient(closest-side,rgba(212,163,115,.36),rgba(212,163,115,.14) 46%,rgba(212,163,115,0) 74%);
+.lg-2{width:52vmax;height:52vmax;right:-6vmax;top:2vmax;
+  background:radial-gradient(closest-side,rgba(212,163,115,.50),rgba(212,163,115,.14) 46%,rgba(212,163,115,0) 74%);
   animation:lg-b 21s ease-in-out infinite alternate}
-.lg-3{width:130vmax;height:130vmax;left:-15vmax;bottom:-55vmax;
-  background:radial-gradient(closest-side,rgba(125,86,45,.42),rgba(125,86,45,.16) 48%,rgba(125,86,45,0) 76%);
+.lg-3{width:70vmax;height:70vmax;left:6vmax;bottom:-22vmax;
+  background:radial-gradient(closest-side,rgba(125,86,45,.58),rgba(125,86,45,.16) 48%,rgba(125,86,45,0) 76%);
   animation:lg-c 25s ease-in-out infinite alternate}
-.lg-4{width:80vmax;height:80vmax;right:-10vmax;bottom:-25vmax;
-  background:radial-gradient(closest-side,rgba(255,220,189,.30),rgba(255,220,189,.10) 44%,rgba(255,220,189,0) 70%);
+.lg-4{width:44vmax;height:44vmax;right:14vmax;bottom:6vmax;
+  background:radial-gradient(closest-side,rgba(255,220,189,.40),rgba(255,220,189,.10) 44%,rgba(255,220,189,0) 70%);
   animation:lg-d 13s ease-in-out infinite alternate}
 @keyframes lg-a{0%{transform:translate3d(0,0,0) scale(1);opacity:.85}
   50%{transform:translate3d(18vmax,10vmax,0) scale(1.28);opacity:1}
@@ -41,6 +41,13 @@
 body>*:not(.lg-field){position:relative;z-index:1}
 body>.bg-surface{background-color:rgba(18,19,20,.62)!important}
 body>.bg-surface-container-lowest{background-color:rgba(13,14,15,.78)!important}
+/* Portrait in the contact rail. Cropped to a tall frame with a hairline gold
+   rule under it, so it reads as a plate in a dossier rather than an avatar. */
+.np-figure{margin:0 0 2px;position:relative}
+.np-img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 22%;
+  border:1px solid #50453b;filter:grayscale(.18) contrast(1.04)}
+.np-cap{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.18em;
+  text-transform:uppercase;color:#9c8e82;padding-top:10px;border-top:1px solid #50453b;margin-top:10px}
 </style></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><div class="lg-field" aria-hidden="true"><b class="lg-1"></b><b class="lg-2"></b><b class="lg-3"></b><b class="lg-4"></b></div><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md"><div class="h-16 max-w-max-content-width mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-4"><a class="font-label-mono-lg text-label-mono-lg tracking-widest uppercase text-on-surface hover:text-primary transition-colors" data-path="profile" href="#">NEIL SANGWAIYA</a><span class="hidden lg:inline-block font-label-mono-sm text-label-mono-sm uppercase text-outline tracking-wider">[DUBAI · EMPIRICAL RESEARCH]</span></div><nav class="hidden md:flex items-center gap-6 font-label-mono-md text-label-mono-md tracking-wider uppercase" data-active-classes="text-primary font-medium"><a aria-current="page" class="transition-colors text-primary font-medium" data-path="profile" href="#">Profile</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="research" href="#">Research</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="building" href="#">Building</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="experience" href="#">Experience</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="credentials" href="#">Credentials</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="skills" href="#">Skills</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-4"><a class="hidden sm:inline-block font-label-mono-sm text-label-mono-sm uppercase px-3 py-1.5 bg-surface-container text-primary hover:bg-surface-container-high hover:text-on-surface transition-colors tracking-widest" data-path="working-paper-archive" href="#">ARCHIVE</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full text-on-surface">
 <link href="https://neilsang0.github.io/" rel="canonical"/>
 <!-- Structured Data: Person & FAQPage -->
@@ -137,8 +144,7 @@ body>.bg-surface-container-lowest{background-color:rgba(13,14,15,.78)!important}
 </div>
 </div>
 <!-- Contact & Verification Rail -->
-<div class="lg:col-span-4 bg-surface-container-lowest p-6 rounded-none border border-surface-container-high flex flex-col justify-between gap-6">
-<div class="flex flex-col gap-2">
+<div class="lg:col-span-4 bg-surface-container-lowest p-6 rounded-none border border-surface-container-high flex flex-col justify-between gap-6"><figure class="np-figure"><img src="neil.jpg" srcset="neil-sm.jpg 420w, neil.jpg 900w" sizes="(max-width:1024px) 60vw, 320px" width="900" height="1200" loading="eager" decoding="async" alt="Neil Sangwaiya, Dubai" class="np-img"/><figcaption class="np-cap">Neil Sangwaiya · Dubai</figcaption></figure><div class="flex flex-col gap-2">
 <div class="font-label-mono-sm text-label-mono-sm text-primary uppercase tracking-widest">Direct Access &amp; Comms</div>
 <div class="font-label-mono-md text-label-mono-md text-on-surface flex flex-col gap-1.5 pt-1">
 <span class="text-on-surface">Dubai, United Arab Emirates</span>
