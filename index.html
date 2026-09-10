@@ -13,20 +13,28 @@
 .lg-field b{position:absolute;display:block;border-radius:50%;will-change:transform}
 .lg-1{width:120vmax;height:120vmax;left:-25vmax;top:-40vmax;
   background:radial-gradient(closest-side,rgba(242,190,140,.42),rgba(242,190,140,.16) 45%,rgba(242,190,140,0) 72%);
-  animation:lg-a 38s ease-in-out infinite alternate}
+  animation:lg-a 16s ease-in-out infinite alternate}
 .lg-2{width:105vmax;height:105vmax;right:-30vmax;top:-15vmax;
   background:radial-gradient(closest-side,rgba(212,163,115,.36),rgba(212,163,115,.14) 46%,rgba(212,163,115,0) 74%);
-  animation:lg-b 47s ease-in-out infinite alternate}
+  animation:lg-b 21s ease-in-out infinite alternate}
 .lg-3{width:130vmax;height:130vmax;left:-15vmax;bottom:-55vmax;
   background:radial-gradient(closest-side,rgba(125,86,45,.42),rgba(125,86,45,.16) 48%,rgba(125,86,45,0) 76%);
-  animation:lg-c 56s ease-in-out infinite alternate}
+  animation:lg-c 25s ease-in-out infinite alternate}
 .lg-4{width:80vmax;height:80vmax;right:-10vmax;bottom:-25vmax;
   background:radial-gradient(closest-side,rgba(255,220,189,.30),rgba(255,220,189,.10) 44%,rgba(255,220,189,0) 70%);
-  animation:lg-d 32s ease-in-out infinite alternate}
-@keyframes lg-a{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(12vmax,8vmax,0) scale(1.16)}}
-@keyframes lg-b{from{transform:translate3d(0,0,0) scale(1.1)}to{transform:translate3d(-13vmax,10vmax,0) scale(.92)}}
-@keyframes lg-c{from{transform:translate3d(0,0,0) scale(.95)}to{transform:translate3d(10vmax,-11vmax,0) scale(1.14)}}
-@keyframes lg-d{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(-10vmax,-7vmax,0) scale(1.22)}}
+  animation:lg-d 13s ease-in-out infinite alternate}
+@keyframes lg-a{0%{transform:translate3d(0,0,0) scale(1);opacity:.85}
+  50%{transform:translate3d(18vmax,10vmax,0) scale(1.28);opacity:1}
+  100%{transform:translate3d(26vmax,-6vmax,0) scale(1.05);opacity:.8}}
+@keyframes lg-b{0%{transform:translate3d(0,0,0) scale(1.1);opacity:.9}
+  50%{transform:translate3d(-20vmax,14vmax,0) scale(.86);opacity:1}
+  100%{transform:translate3d(-9vmax,26vmax,0) scale(1.2);opacity:.85}}
+@keyframes lg-c{0%{transform:translate3d(0,0,0) scale(.95);opacity:.85}
+  50%{transform:translate3d(16vmax,-16vmax,0) scale(1.24);opacity:1}
+  100%{transform:translate3d(-8vmax,-26vmax,0) scale(1);opacity:.8}}
+@keyframes lg-d{0%{transform:translate3d(0,0,0) scale(1);opacity:.75}
+  50%{transform:translate3d(-16vmax,-11vmax,0) scale(1.34);opacity:1}
+  100%{transform:translate3d(9vmax,-20vmax,0) scale(1.1);opacity:.8}}
 @media (prefers-reduced-motion:reduce){.lg-field b{animation:none}}
 /* Content above the field, on a translucent base so prose always has ground
    under it rather than sitting on the brightest part of a blob. */
