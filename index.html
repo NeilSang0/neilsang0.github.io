@@ -11,18 +11,19 @@
    Only transform animates, and prefers-reduced-motion stops it. */
 .lg-field{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
 .lg-field b{position:absolute;display:block;border-radius:50%;will-change:transform}
-.lg-1{width:62vmax;height:62vmax;left:-8vmax;top:-14vmax;background:radial-gradient(closest-side,rgba(242,190,140,.55),rgba(242,190,140,.16) 45%,rgba(242,190,140,0) 72%)}
-.lg-2{width:52vmax;height:52vmax;right:-6vmax;top:2vmax;background:radial-gradient(closest-side,rgba(212,163,115,.50),rgba(212,163,115,.14) 46%,rgba(212,163,115,0) 74%)}
-.lg-3{width:70vmax;height:70vmax;left:6vmax;bottom:-22vmax;background:radial-gradient(closest-side,rgba(125,86,45,.58),rgba(125,86,45,.16) 48%,rgba(125,86,45,0) 76%)}
-.lg-4{width:44vmax;height:44vmax;right:14vmax;bottom:6vmax;background:radial-gradient(closest-side,rgba(255,220,189,.40),rgba(255,220,189,.10) 44%,rgba(255,220,189,0) 70%)}
+.lg-1{width:62vmax;height:62vmax;left:-8vmax;top:-14vmax;background:radial-gradient(closest-side,rgba(242,190,140,.72),rgba(242,190,140,.16) 45%,rgba(242,190,140,0) 72%)}
+.lg-2{width:52vmax;height:52vmax;right:-6vmax;top:2vmax;background:radial-gradient(closest-side,rgba(212,163,115,.66),rgba(212,163,115,.14) 46%,rgba(212,163,115,0) 74%)}
+.lg-3{width:70vmax;height:70vmax;left:6vmax;bottom:-22vmax;background:radial-gradient(closest-side,rgba(125,86,45,.70),rgba(125,86,45,.16) 48%,rgba(125,86,45,0) 76%)}
+.lg-4{width:44vmax;height:44vmax;right:14vmax;bottom:6vmax;background:radial-gradient(closest-side,rgba(255,220,189,.52),rgba(255,220,189,.10) 44%,rgba(255,220,189,0) 70%)}
 @media (prefers-reduced-motion:reduce){.lg-field b{animation:none}}
 /* Content above the field, on a translucent base so prose always has ground
    under it rather than sitting on the brightest part of a blob. */
 body>*:not(.lg-field){position:relative;z-index:1}
-body>.bg-surface{background-color:rgba(18,19,20,.62)!important}
-body>.bg-surface-container-lowest{background-color:rgba(13,14,15,.78)!important}
+body>.bg-surface{background-color:rgba(18,19,20,.30)!important}
+body>.bg-surface-container-lowest{background-color:rgba(13,14,15,.62)!important}
 /* Portrait in the contact rail. Cropped to a tall frame with a hairline gold
    rule under it, so it reads as a plate in a dossier rather than an avatar. */
+section p,section li,section span,footer p{text-shadow:0 1px 16px rgba(18,19,20,.95),0 0 3px rgba(18,19,20,.9)}
 .np-figure{margin:0 0 2px;position:relative}
 .np-img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 22%;
   border:1px solid #50453b;filter:grayscale(.18) contrast(1.04)}
@@ -897,10 +898,10 @@ body>.bg-surface-container-lowest{background-color:rgba(13,14,15,.78)!important}
 (function(){
   var reduce = matchMedia('(prefers-reduced-motion: reduce)');
   var blobs = [
-    {el:document.querySelector('.lg-1'), ax:16, ay:10, sx:0.00021, sy:0.00013, ph:0,    sc:0.13, ss:0.00017},
-    {el:document.querySelector('.lg-2'), ax:14, ay:13, sx:0.00016, sy:0.00023, ph:1.7,  sc:0.11, ss:0.00012},
-    {el:document.querySelector('.lg-3'), ax:18, ay:12, sx:0.00012, sy:0.00019, ph:3.1,  sc:0.15, ss:0.00009},
-    {el:document.querySelector('.lg-4'), ax:12, ay:15, sx:0.00027, sy:0.00015, ph:4.6,  sc:0.17, ss:0.00022}
+    {el:document.querySelector('.lg-1'), ax:24, ay:16, sx:0.00062, sy:0.00041, ph:0,    sc:0.20, ss:0.00048},
+    {el:document.querySelector('.lg-2'), ax:21, ay:19, sx:0.00049, sy:0.00068, ph:1.7,  sc:0.17, ss:0.00037},
+    {el:document.querySelector('.lg-3'), ax:26, ay:18, sx:0.00037, sy:0.00056, ph:3.1,  sc:0.22, ss:0.00029},
+    {el:document.querySelector('.lg-4'), ax:19, ay:22, sx:0.00079, sy:0.00045, ph:4.6,  sc:0.25, ss:0.00063}
   ].filter(function(b){return b.el;});
   if (!blobs.length) return;
   var raf = null;
