@@ -23,6 +23,13 @@ driven almost entirely by one constituent. Code: [cbam-uae-note](https://github.
 
 ## Building
 
+**[Bindler](https://bindler.pages.dev)** — source-cited Excel workbooks for
+sustainability disclosure and financial modelling: CSRD double materiality, SFDR
+PAI, EU Taxonomy, EU CBAM cost, GHG Protocol inventory, PCAF financed emissions,
+green bond reporting, DCF and SaaS models. Sold on Gumroad with single, team and
+consultancy licences. Also seven data extraction tools for LLM retrieval
+pipelines on [Apify](https://apify.com/bindler).
+
 **[Solandor](https://solandor.co)** — a free, neutral catalogue of clean energy
 projects and the investors who fund them across the Gulf, South Asia and South East
 Asia. Every record names the public source it came from. 6,800+ project records and
