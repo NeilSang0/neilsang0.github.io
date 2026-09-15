@@ -48,3 +48,11 @@ the email. Everything stops under `prefers-reduced-motion`.
 - LinkedIn and SSRN "website" fields pointing here: Neil's to set.
 - `STITCH-BRIEF.md` is the design brief; `github/PROFILE-README.md` is the
   profile README already live at github.com/NeilSang0.
+
+## Knowledge Panel (15 Sep 2026)
+Neil ruled this site is the founder "about" page for Solandor and Bindler, so
+both now link here and share the entity ID `https://neilsang0.github.io/#person`
+(Solandor `lib/site.ts` + `components/public/structured-data.tsx`; Bindler
+`site/build_site.py` + `site/content/about.md`). The page carries a ProfilePage
+graph with the portrait as `image`; keep `description` equal to the meta
+description. Never add a `sameAs` profile Neil has not confirmed exists.
