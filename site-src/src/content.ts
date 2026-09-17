@@ -78,6 +78,7 @@ export const APIFY_TOOLS = [
   { name: 'GitHub Repo to RAG', text: 'Extracts full repositories into parsed AST trees in a single unified archive request, bypassing the 60 requests per hour unauthenticated rate threshold.' },
   { name: 'Zendesk, Discourse & WordPress Extractors', text: 'Three enterprise forum and CMS extractors with full taxonomy resolution, thread nesting preservation and cursor-based pagination recovery.' },
 ]
+export const AITOOLFINDER = { href: 'https://aitoolfinder.neil-lancers.workers.dev/', text: 'Performance comparison directory benchmarking over 50 enterprise and developer-focused AI tools across 10 taxonomy verticals, compiled on Cloudflare Workers edge architecture for sub-20ms global delivery.' }
 export const SOLANDOR_TEXT = 'B2B clean energy capital intelligence platform mapping renewable investments across the Gulf Cooperation Council, South Asia and Southeast Asia. Scheduled automated ingestion from regulatory filings, serverless edge microservices on Cloudflare Workers, cron pipelines and exponential backoff retry mechanics.'
 export const SIMULATIONS = [
   { track: 'Banking, markets & asset management', items: [['Citi', 'Investment Banking: M&A valuation and financial spreading'], ['Bank of America', 'DCF model design and valuation sensitivity tables'], ['Goldman Sachs', 'Global Markets risk assessment'], ['Goldman Sachs', 'Asset Management operations'], ['Fidelity International', 'Quantitative portfolio optimisation and Sharpe ratio balancing'], ['Wells Fargo', 'Commercial Banking lending and credit structuring']] },

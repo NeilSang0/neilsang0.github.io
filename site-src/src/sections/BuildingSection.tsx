@@ -1,7 +1,7 @@
 import FadeIn from '../components/FadeIn'
 import Section, { NumberedList } from '../components/Section'
 import { LiveProjectButton } from '../components/Buttons'
-import { CATALOGUE, SHELVES, SHELF_LINKS, APIFY_TOOLS, SOLANDOR_TEXT, LINKS } from '../content'
+import { CATALOGUE, SHELVES, SHELF_LINKS, APIFY_TOOLS, SOLANDOR_TEXT, AITOOLFINDER, LINKS } from '../content'
 
 const c = '#D7E2EA'
 
@@ -13,11 +13,11 @@ export default function BuildingSection() {
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div>
               <p className="font-light uppercase tracking-widest text-xs sm:text-sm opacity-70" style={{ color: c }}>Founder · 2026 · live</p>
-              <h3 className="hero-heading font-black leading-tight mt-2" style={{ fontSize: 'clamp(1.4rem, 3.2vw, 2.8rem)' }}>Bindler: source-cited finance & sustainability workbooks</h3>
+              <h3 className="hero-heading font-black leading-tight mt-2" style={{ fontSize: 'clamp(1.2rem, 2.6vw, 2.3rem)' }}>Bindler: source-cited finance & sustainability workbooks</h3>
             </div>
             <div className="flex flex-wrap gap-3"><LiveProjectButton href={LINKS.bindler} label="bindler.pages.dev" /><LiveProjectButton href={LINKS.apify} label="Apify" /></div>
           </div>
-          <p className="font-light leading-relaxed max-w-3xl mt-6" style={{ color: c, opacity: 0.75, fontSize: 'clamp(0.9rem, 1.5vw, 1.15rem)' }}>
+          <p className="font-light leading-relaxed max-w-3xl mt-6" style={{ color: c, opacity: 0.75, fontSize: 'clamp(0.85rem, 1.3vw, 1rem)' }}>
             Ready-to-use Excel workbooks for sustainability disclosure, climate reporting and project finance, every figure and threshold cited to the regulation or standard it comes from. {SHELVES}{' '}
             {SHELF_LINKS.map(([l, h]) => <a key={h} href={h} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:opacity-70">{l} ↗ </a>)}
           </p>
@@ -27,7 +27,7 @@ export default function BuildingSection() {
                 <h4 className="font-medium uppercase tracking-widest text-xs sm:text-sm mb-3" style={{ color: c }}>{g.group}</h4>
                 <ul className="flex flex-col gap-2">
                   {g.items.map(([name, href]) => (
-                    <li key={href}><a href={href} target="_blank" rel="noopener noreferrer" className="font-light hover:opacity-70 transition-opacity duration-200" style={{ color: c, fontSize: 'clamp(0.9rem, 1.4vw, 1.1rem)' }}>{name} ↗</a></li>
+                    <li key={href}><a href={href} target="_blank" rel="noopener noreferrer" className="font-light hover:opacity-70 transition-opacity duration-200" style={{ color: c, fontSize: 'clamp(0.85rem, 1.25vw, 0.98rem)' }}>{name} ↗</a></li>
                   ))}
                 </ul>
               </div>
@@ -36,7 +36,7 @@ export default function BuildingSection() {
         </FadeIn>
 
         <div>
-          <FadeIn as="h3" className="font-medium uppercase tracking-widest text-center mb-8" style={{ color: c, fontSize: 'clamp(0.9rem, 1.6vw, 1.3rem)' }}>Seven data extraction tools on Apify, built for LLM retrieval pipelines</FadeIn>
+          <FadeIn as="h3" className="font-medium uppercase tracking-widest text-center mb-8" style={{ color: c, fontSize: 'clamp(0.85rem, 1.4vw, 1.1rem)' }}>Seven data extraction tools on Apify, built for LLM retrieval pipelines</FadeIn>
           <NumberedList tone="dark" items={APIFY_TOOLS.map((t) => ({ title: t.name, text: t.text }))} />
         </div>
 
@@ -44,11 +44,22 @@ export default function BuildingSection() {
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div>
               <p className="font-light uppercase tracking-widest text-xs sm:text-sm opacity-70" style={{ color: c }}>Founder & developer · 2026 to present · live system</p>
-              <h3 className="hero-heading font-black leading-tight mt-2" style={{ fontSize: 'clamp(1.4rem, 3.2vw, 2.8rem)' }}>Solandor: clean energy data platform</h3>
+              <h3 className="hero-heading font-black leading-tight mt-2" style={{ fontSize: 'clamp(1.2rem, 2.6vw, 2.3rem)' }}>Solandor: clean energy data platform</h3>
             </div>
             <LiveProjectButton href={LINKS.solandor} label="solandor.co" />
           </div>
-          <p className="font-light leading-relaxed max-w-3xl mt-6" style={{ color: c, opacity: 0.75, fontSize: 'clamp(0.9rem, 1.5vw, 1.15rem)' }}>{SOLANDOR_TEXT}</p>
+          <p className="font-light leading-relaxed max-w-3xl mt-6" style={{ color: c, opacity: 0.75, fontSize: 'clamp(0.85rem, 1.3vw, 1rem)' }}>{SOLANDOR_TEXT}</p>
+        </FadeIn>
+
+        <FadeIn className="rounded-[40px] sm:rounded-[50px] md:rounded-[60px] border-2 border-[#D7E2EA] p-6 sm:p-8 md:p-12">
+          <div className="flex flex-wrap items-start justify-between gap-4">
+            <div>
+              <p className="font-light uppercase tracking-widest text-xs sm:text-sm opacity-70" style={{ color: c }}>Founder & developer · 2026 · deployed</p>
+              <h3 className="hero-heading font-black leading-tight mt-2" style={{ fontSize: 'clamp(1.2rem, 2.6vw, 2.3rem)' }}>AIToolFinder: AI tool comparison directory</h3>
+            </div>
+            <LiveProjectButton href={AITOOLFINDER.href} label="Live Project" />
+          </div>
+          <p className="font-light leading-relaxed max-w-3xl mt-6" style={{ color: c, opacity: 0.75, fontSize: 'clamp(0.85rem, 1.3vw, 1rem)' }}>{AITOOLFINDER.text}</p>
         </FadeIn>
       </div>
     </Section>

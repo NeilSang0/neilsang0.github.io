@@ -16,10 +16,10 @@ function Card({ p, index, total, progress }: { p: (typeof PROJECTS)[number]; ind
       >
         <div className="flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-4 sm:gap-6">
-            <span className="hero-heading font-black leading-none" style={{ fontSize: 'clamp(3rem, 10vw, 140px)' }}>0{index + 1}</span>
+            <span className="hero-heading font-black leading-none" style={{ fontSize: 'clamp(2.4rem, 8vw, 110px)' }}>0{index + 1}</span>
             <div>
               <div className="text-[#D7E2EA] font-light uppercase tracking-widest text-xs sm:text-sm opacity-70">{p.category}</div>
-              <h3 className="text-[#D7E2EA] font-medium uppercase leading-tight" style={{ fontSize: 'clamp(1.2rem, 2.6vw, 2.4rem)' }}>{p.name}</h3>
+              <h3 className="text-[#D7E2EA] font-medium uppercase leading-tight" style={{ fontSize: 'clamp(1.05rem, 2.2vw, 2rem)' }}>{p.name}</h3>
             </div>
           </div>
           <LiveProjectButton href={p.href} />
@@ -41,7 +41,7 @@ export default function ProjectsSection() {
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end end'] })
   return (
     <section id="projects" className="relative rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 px-5 sm:px-8 md:px-10 pt-20 sm:pt-24 md:pt-32 pb-24 sm:pb-32" style={{ background: '#0C0C0C', zIndex: 10 }}>
-      <FadeIn as="h2" y={40} className="hero-heading font-black uppercase text-center leading-none tracking-tight mb-10 sm:mb-14" style={{ fontSize: 'clamp(3rem, 12vw, 160px)' }}>
+      <FadeIn as="h2" y={40} className="hero-heading font-black uppercase text-center leading-none tracking-tight mb-10 sm:mb-14" style={{ fontSize: 'clamp(2.4rem, 9.5vw, 128px)' }}>
         Project
       </FadeIn>
       <div ref={ref}>

@@ -16,16 +16,16 @@ export default function AboutSection() {
     <section id="about" className="relative min-h-screen flex flex-col items-center justify-center px-5 sm:px-8 md:px-10 py-20" style={{ background: '#0C0C0C' }}>
       {FACTS.map((f, i) => (
         <FadeIn key={f.label} delay={CORNERS[i].delay} x={CORNERS[i].x} y={0} duration={0.9} className={`absolute ${CORNERS[i].cls} w-[120px] sm:w-[160px] md:w-[210px]`}>
-          <div className="hero-heading font-black leading-none" style={{ fontSize: 'clamp(1.6rem, 3.6vw, 3.2rem)' }}>{f.value}</div>
-          <div className="text-[#D7E2EA] font-light uppercase tracking-wider mt-1" style={{ fontSize: 'clamp(0.6rem, 0.9vw, 0.85rem)' }}>{f.label}</div>
+          <div className="hero-heading font-black leading-none" style={{ fontSize: 'clamp(1.4rem, 3vw, 2.7rem)' }}>{f.value}</div>
+          <div className="text-[#D7E2EA] font-light uppercase tracking-wider mt-1" style={{ fontSize: 'clamp(0.55rem, 0.8vw, 0.75rem)' }}>{f.label}</div>
         </FadeIn>
       ))}
 
       <div className="flex flex-col items-center gap-10 sm:gap-14 md:gap-16">
-        <FadeIn as="h2" delay={0} y={40} className="hero-heading font-black uppercase leading-none tracking-tight text-center" style={{ fontSize: 'clamp(3rem, 12vw, 160px)' }}>
+        <FadeIn as="h2" delay={0} y={40} className="hero-heading font-black uppercase leading-none tracking-tight text-center" style={{ fontSize: 'clamp(2.4rem, 9.5vw, 128px)' }}>
           About me
         </FadeIn>
-        <AnimatedText text={ABOUT_TEXT} className="text-[#D7E2EA] font-medium text-center leading-relaxed max-w-[560px]" style={{ fontSize: 'clamp(1rem, 2vw, 1.35rem)' }} />
+        <AnimatedText text={ABOUT_TEXT} className="text-[#D7E2EA] font-medium text-center leading-relaxed max-w-[560px]" style={{ fontSize: 'clamp(0.95rem, 1.7vw, 1.2rem)' }} />
       </div>
       <div className="mt-16 sm:mt-20 md:mt-24">
         <ContactButton />

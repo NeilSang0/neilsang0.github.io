@@ -8,14 +8,14 @@ export default function HeroSection() {
     <section className="relative h-screen flex flex-col" style={{ overflowX: 'clip', background: '#0C0C0C' }}>
       <FadeIn as="nav" delay={0} y={-20} className="flex justify-between px-6 md:px-10 pt-6 md:pt-8 relative z-20" aria-label="Main">
         {NAV.map((n) => (
-          <a key={n.label} href={n.href} className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] hover:opacity-70 transition-opacity duration-200">
+          <a key={n.label} href={n.href} className="text-[#D7E2EA] font-medium uppercase tracking-wider text-xs md:text-base lg:text-lg hover:opacity-70 transition-opacity duration-200">
             {n.label}
           </a>
         ))}
       </FadeIn>
 
       <div className="overflow-hidden">
-        <FadeIn as="h1" delay={0.15} y={40} className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-center text-[14vw] sm:text-[15vw] md:text-[16vw] lg:text-[17.5vw] mt-6 sm:mt-4 md:-mt-5">
+        <FadeIn as="h1" delay={0.15} y={40} className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-center text-[12vw] sm:text-[13vw] md:text-[14vw] lg:text-[15vw] mt-6 sm:mt-4 md:-mt-5">
           Hi, i&apos;m neil
         </FadeIn>
       </div>
@@ -37,7 +37,7 @@ export default function HeroSection() {
       </Magnet>
 
       <div className="mt-auto flex justify-between items-end px-6 md:px-10 pb-7 sm:pb-8 md:pb-10 relative z-20">
-        <FadeIn as="p" delay={0.35} y={20} className="text-[#D7E2EA] font-light uppercase tracking-wide leading-snug max-w-[160px] sm:max-w-[220px] md:max-w-[260px]" style={{ fontSize: 'clamp(0.75rem, 1.4vw, 1.5rem)' }}>
+        <FadeIn as="p" delay={0.35} y={20} className="text-[#D7E2EA] font-light uppercase tracking-wide leading-snug max-w-[160px] sm:max-w-[220px] md:max-w-[260px]" style={{ fontSize: 'clamp(0.7rem, 1.2vw, 1.25rem)' }}>
           {HERO_TAGLINE}
         </FadeIn>
         <FadeIn delay={0.5} y={20}>
