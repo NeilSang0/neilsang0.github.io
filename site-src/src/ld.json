@@ -1,24 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Neil Sangwaiya - Finance, Research & Building</title>
-    <meta name="description" content="Neil Sangwaiya is a Dubai-based finance undergraduate at RIT Dubai, an SSRN-published sustainable-finance researcher, and the founder of Solandor and Bindler." />
-    <link rel="canonical" href="https://neilsang0.github.io/" />
-    <meta name="robots" content="index,follow,max-image-preview:large" />
-    <meta property="og:type" content="profile" />
-    <meta property="og:title" content="Neil Sangwaiya - Finance, Research & Building" />
-    <meta property="og:description" content="Dubai-based finance undergraduate, SSRN-published sustainable-finance researcher, founder of Solandor and Bindler." />
-    <meta property="og:url" content="https://neilsang0.github.io/" />
-    <meta property="og:image" content="https://neilsang0.github.io/neil.jpg" />
-    <meta property="og:image:width" content="900" /><meta property="og:image:height" content="1200" />
-    <meta property="og:image:alt" content="Neil Sangwaiya, Dubai" />
-    <meta property="profile:first_name" content="Neil" /><meta property="profile:last_name" content="Sangwaiya" />
-    <meta name="twitter:card" content="summary" /><meta name="twitter:image" content="https://neilsang0.github.io/neil.jpg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <script type="application/ld+json" id="ld">{
+{
   "@context": "https://schema.org",
   "@type": "ProfilePage",
   "@id": "https://neilsang0.github.io/#profilepage",
@@ -116,11 +96,4 @@
   "about": {
     "@id": "https://neilsang0.github.io/#person"
   }
-}</script>
-    <script type="module" crossorigin src="/assets/index-D0e5c1Ck.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-xvImBF98.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
-</html>
+}
