@@ -50,11 +50,15 @@ character-by-character About text, sticky stacking project cards. The old
 liquid gold field is gone with the redesign. Magnet stops under
 `prefers-reduced-motion`.
 
-## What the redesign dropped
-The spec has five sections plus a contact footer, so the full experience
-entries, the 18 simulations list, the Apify tool descriptions and the Bindler
-catalogue links no longer appear. They are still in git history (commit before
-18 Sep 2026) if Neil wants any of it back.
+## Sections (18 Sep 2026, everything restored)
+Hero, marquee, About, Work, Projects (stacking cards), then rounded sheets
+alternating dark/white via `components/Section.tsx` with rising z-index:
+Research, Experience, Building (Bindler catalogue, Apify tools, Solandor),
+Simulations, Honours, Credentials, Skills, Education, FAQ, Contact. FAQPage
+schema is back in `site-src/index.html`; its answers are the same strings as
+`FAQ` in `content.ts`, and a build-time check is not automated, so keep them
+identical by hand. AIToolFinder was left out: its Workers URL on the revoked
+account no longer resolves.
 
 ## Still open
 - Google Search Console verification: needs the meta tag from Neil, then
