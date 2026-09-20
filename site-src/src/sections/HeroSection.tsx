@@ -30,7 +30,7 @@ export default function HeroSection() {
             height={1200}
             alt="Neil Sangwaiya, Dubai"
             className="w-full h-auto block rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] object-cover"
-            style={{ height: 'clamp(300px, 62vh, 700px)', objectPosition: '50% 52%' }}
+            style={{ height: 'clamp(300px, 62vh, 700px)', objectPosition: '50% 38%' }}
             decoding="async"
           />
         </FadeIn>
