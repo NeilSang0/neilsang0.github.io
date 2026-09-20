@@ -40,8 +40,8 @@ export default function ProjectsSection() {
   const ref = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end end'] })
   return (
-    <section id="projects" className="relative rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 px-5 sm:px-8 md:px-10 pt-20 sm:pt-24 md:pt-32 pb-24 sm:pb-32" style={{ background: '#0C0C0C', zIndex: 10 }}>
-      <FadeIn as="h2" y={40} className="hero-heading font-black uppercase text-center leading-none tracking-tight mb-10 sm:mb-14" style={{ fontSize: 'clamp(2.4rem, 9.5vw, 128px)' }}>
+    <section id="projects" className="relative rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 px-6 sm:px-10 md:px-14 pt-16 sm:pt-20 md:pt-24 pb-20 sm:pb-24" style={{ background: '#0C0C0C', zIndex: 10 }}>
+      <FadeIn as="h2" y={40} className="hero-heading font-black uppercase text-center leading-none tracking-tight mb-8 sm:mb-10" style={{ fontSize: 'clamp(2.4rem, 9.5vw, 128px)' }}>
         Project
       </FadeIn>
       <div ref={ref}>

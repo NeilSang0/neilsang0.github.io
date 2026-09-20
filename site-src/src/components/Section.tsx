@@ -7,7 +7,7 @@ export default function Section({ id, tone, title, kicker, z, children, classNam
   const dark = tone === 'dark'
   const style: CSSProperties = { background: dark ? '#0C0C0C' : '#FFFFFF', zIndex: z, position: 'relative' }
   return (
-    <section id={id} className={`rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 px-5 sm:px-8 md:px-10 pt-20 sm:pt-24 md:pt-32 pb-24 sm:pb-28 md:pb-36 ${className}`} style={style}>
+    <section id={id} className={`rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 px-6 sm:px-10 md:px-14 pt-16 sm:pt-20 md:pt-24 pb-20 sm:pb-24 md:pb-28 ${className}`} style={style}>
       <FadeIn as="h2" y={40} className={`${dark ? 'hero-heading' : 'text-[#0C0C0C]'} font-black uppercase text-center leading-none tracking-tight`} style={{ fontSize: 'clamp(2.4rem, 9.5vw, 128px)' }}>
         {title}
       </FadeIn>
@@ -16,7 +16,7 @@ export default function Section({ id, tone, title, kicker, z, children, classNam
           {kicker}
         </FadeIn>
       )}
-      <div className="mt-16 sm:mt-20 md:mt-28">{children}</div>
+      <div className="mt-12 sm:mt-14 md:mt-20">{children}</div>
     </section>
   )
 }
@@ -29,7 +29,7 @@ export function NumberedList({ tone, items }: { tone: 'dark' | 'light'; items: {
   return (
     <ol className="max-w-5xl mx-auto">
       {items.map((it, i) => (
-        <FadeIn as="li" key={it.title + i} delay={i * 0.1} className="flex gap-6 sm:gap-10 md:gap-14 items-start py-8 sm:py-10 md:py-12" style={{ borderTop: rule(tone), borderBottom: i === items.length - 1 ? rule(tone) : undefined }}>
+        <FadeIn as="li" key={it.title + i} delay={i * 0.1} className="flex gap-5 sm:gap-8 md:gap-10 items-start py-6 sm:py-8 md:py-10" style={{ borderTop: rule(tone), borderBottom: i === items.length - 1 ? rule(tone) : undefined }}>
           <span className={`${tone === 'dark' ? 'hero-heading' : 'text-[#0C0C0C]'} font-black leading-none flex-none`} style={{ fontSize: 'clamp(2.4rem, 8vw, 110px)' }}>{String(i + 1).padStart(2, '0')}</span>
           <div className="flex flex-col gap-3 pt-2 min-w-0">
             <h3 className="font-medium uppercase leading-tight" style={{ color: c, fontSize: 'clamp(0.95rem, 1.8vw, 1.7rem)' }}>

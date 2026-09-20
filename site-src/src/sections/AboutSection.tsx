@@ -13,7 +13,7 @@ const CORNERS = [
 
 export default function AboutSection() {
   return (
-    <section id="about" className="relative min-h-screen flex flex-col items-center justify-center px-5 sm:px-8 md:px-10 py-20" style={{ background: '#0C0C0C' }}>
+    <section id="about" className="relative min-h-screen flex flex-col items-center justify-center px-6 sm:px-10 md:px-14 py-20" style={{ background: '#0C0C0C' }}>
       {FACTS.map((f, i) => (
         <FadeIn key={f.label} delay={CORNERS[i].delay} x={CORNERS[i].x} y={0} duration={0.9} className={`absolute ${CORNERS[i].cls} w-[120px] sm:w-[160px] md:w-[210px]`}>
           <div className="hero-heading font-black leading-none" style={{ fontSize: 'clamp(1.4rem, 3vw, 2.7rem)' }}>{f.value}</div>
@@ -27,7 +27,7 @@ export default function AboutSection() {
         </FadeIn>
         <AnimatedText text={ABOUT_TEXT} className="text-[#D7E2EA] font-medium text-center leading-relaxed max-w-[560px]" style={{ fontSize: 'clamp(0.95rem, 1.7vw, 1.2rem)' }} />
       </div>
-      <div className="mt-16 sm:mt-20 md:mt-24">
+      <div className="mt-12 sm:mt-14 md:mt-16">
         <ContactButton />
       </div>
     </section>

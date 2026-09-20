@@ -6,7 +6,7 @@ import { NAV, HERO_TAGLINE } from '../content'
 export default function HeroSection() {
   return (
     <section className="relative h-screen flex flex-col" style={{ overflowX: 'clip', background: '#0C0C0C' }}>
-      <FadeIn as="nav" delay={0} y={-20} className="flex justify-between px-6 md:px-10 pt-6 md:pt-8 relative z-20" aria-label="Main">
+      <FadeIn as="nav" delay={0} y={-20} className="flex justify-between px-6 md:px-14 pt-6 md:pt-8 relative z-20" aria-label="Main">
         {NAV.map((n) => (
           <a key={n.label} href={n.href} className="text-[#D7E2EA] font-medium uppercase tracking-wider text-xs md:text-base lg:text-lg hover:opacity-70 transition-opacity duration-200">
             {n.label}
@@ -30,13 +30,13 @@ export default function HeroSection() {
             height={1200}
             alt="Neil Sangwaiya, Dubai"
             className="w-full h-auto block rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] object-cover"
-            style={{ height: 'clamp(300px, 56vh, 640px)', objectPosition: '50% 38%' }}
+            style={{ height: 'clamp(300px, 62vh, 700px)', objectPosition: '50% 38%' }}
             decoding="async"
           />
         </FadeIn>
       </Magnet>
 
-      <div className="mt-auto flex justify-between items-end px-6 md:px-10 pb-7 sm:pb-8 md:pb-10 relative z-20">
+      <div className="mt-auto flex justify-between items-end px-6 md:px-14 pb-8 sm:pb-10 md:pb-12 relative z-20">
         <FadeIn as="p" delay={0.35} y={20} className="text-[#D7E2EA] font-light uppercase tracking-wide leading-snug max-w-[160px] sm:max-w-[220px] md:max-w-[260px]" style={{ fontSize: 'clamp(0.7rem, 1.2vw, 1.25rem)' }}>
           {HERO_TAGLINE}
         </FadeIn>

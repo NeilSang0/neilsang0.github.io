@@ -27,7 +27,7 @@ export default function MarqueeSection() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
   return (
-    <section ref={ref} className="pt-24 sm:pt-32 md:pt-40 pb-10 flex flex-col gap-3 overflow-hidden" style={{ background: '#0C0C0C' }} aria-label="Pages Neil has built">
+    <section ref={ref} className="pt-16 sm:pt-20 md:pt-28 pb-8 flex flex-col gap-3 overflow-hidden" style={{ background: '#0C0C0C' }} aria-label="Pages Neil has built">
       <Row images={ROW1} dir={1} offset={offset} />
       <Row images={ROW2} dir={-1} offset={offset} />
     </section>

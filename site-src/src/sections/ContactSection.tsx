@@ -12,7 +12,7 @@ const ROUTES = [
 
 export default function ContactSection() {
   return (
-    <footer id="contact" className="relative rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 px-5 sm:px-8 md:px-10 pt-24 sm:pt-32 pb-12" style={{ background: '#FFFFFF', zIndex: 110 }}>
+    <footer id="contact" className="relative rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 px-6 sm:px-10 md:px-14 pt-16 sm:pt-20 pb-10" style={{ background: '#FFFFFF', zIndex: 110 }}>
       <FadeIn as="h2" y={40} className="text-[#0C0C0C] font-black uppercase text-center leading-none tracking-tight" style={{ fontSize: 'clamp(2.4rem, 9.5vw, 128px)' }}>
         Contact
       </FadeIn>
