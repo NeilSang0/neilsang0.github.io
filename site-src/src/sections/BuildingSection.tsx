@@ -15,7 +15,7 @@ export default function BuildingSection() {
               <p className="font-light uppercase tracking-widest text-xs sm:text-sm opacity-70" style={{ color: c }}>Founder · 2026 · live</p>
               <h3 className="hero-heading font-black leading-tight mt-2" style={{ fontSize: 'clamp(1.2rem, 2.6vw, 2.3rem)' }}>Bindler: source-cited finance & sustainability workbooks</h3>
             </div>
-            <div className="flex flex-wrap gap-3"><LiveProjectButton href={LINKS.bindler} label="bindler.pages.dev" /><LiveProjectButton href={LINKS.apify} label="Apify" /></div>
+            <div className="flex flex-wrap gap-3"><LiveProjectButton href={LINKS.bindler} label="bindler.co" /><LiveProjectButton href={LINKS.apify} label="Apify" /></div>
           </div>
           <p className="font-light leading-relaxed max-w-3xl mt-6" style={{ color: c, opacity: 0.75, fontSize: 'clamp(0.85rem, 1.3vw, 1rem)' }}>
             Ready-to-use Excel workbooks for sustainability disclosure, climate reporting and project finance, every figure and threshold cited to the regulation or standard it comes from. {SHELVES}{' '}

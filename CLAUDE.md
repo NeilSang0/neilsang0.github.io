@@ -9,7 +9,7 @@ way: separate repo, separate host, separate account, separate session.
   `cd site-src && npm run build` writes `index.html` and `assets/` into the repo
   root, which is what Pages serves. Commit the build output. All copy lives in
   `site-src/src/content.ts`; the JSON-LD template is `site-src/index.html`.
-- `shots/` are screenshots of Neil's own pages (solandor.co, bindler.pages.dev,
+- `shots/` are screenshots of Neil's own pages (solandor.co, bindler.co,
   GitHub, Apify) plus three rendered research cards; SSRN blocks headless
   capture so the paper cards are drawn from the paper facts instead.
 - Also `robots.txt`, `sitemap.xml`, two portrait sizes (`neil.jpg`,

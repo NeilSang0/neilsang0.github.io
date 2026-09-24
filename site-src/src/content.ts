@@ -13,7 +13,7 @@ export const LINKS = {
   ssrn1: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7251660',
   ssrn2: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7256019',
   solandor: 'https://solandor.co',
-  bindler: 'https://bindler.pages.dev',
+  bindler: 'https://bindler.co',
   apify: 'https://apify.com/bindler',
 }
 export const HERO_TAGLINE = 'a finance undergraduate and sustainable-finance researcher building the data behind the theory'
@@ -112,7 +112,7 @@ export const SCHOOLS = [
 ]
 export const FAQ = [
   { q: "What are Neil Sangwaiya's primary empirical research specializations?", a: "My empirical research targets the pricing dynamics of sovereign green debt and cross-border regulatory environmental tariffs. On SSRN, I have published primary econometric investigations into India's Sovereign Green Bonds (quantifying the 2.0 bps greenium and analyzing auction truncation mechanics) as well as the quantitative equity risk of the EU's Carbon Border Adjustment Mechanism (CBAM) on ADX and DFM benchmark indices." },
-  { q: 'What technical infrastructure and data products has Neil developed?', a: 'I build and maintain production RAG and AI extraction tooling. Through Bindler (bindler.pages.dev), I build and sell source-cited Excel workbooks for sustainability disclosure, climate reporting and project finance, from CSRD and IFRS S2 to solar, wind and battery storage models, and I have authored seven data extraction tools on Apify that reconstruct reading order from raw PDF glyph coordinates, resolve irregular HTML tables, and ingest complex developer documentation. Additionally, I founded Solandor (solandor.co), a clean energy capital tracking platform powered by Cloudflare Workers and automated cron scrapers.' },
+  { q: 'What technical infrastructure and data products has Neil developed?', a: 'I build and maintain production RAG and AI extraction tooling. Through Bindler (bindler.co), I build and sell source-cited Excel workbooks for sustainability disclosure, climate reporting and project finance, from CSRD and IFRS S2 to solar, wind and battery storage models, and I have authored seven data extraction tools on Apify that reconstruct reading order from raw PDF glyph coordinates, resolve irregular HTML tables, and ingest complex developer documentation. Additionally, I founded Solandor (solandor.co), a clean energy capital tracking platform powered by Cloudflare Workers and automated cron scrapers.' },
   { q: "What is Neil's background as a student athlete?", a: 'Standing 6′6″, I have competed at elite levels in basketball since 2018. I served as team captain for Dubai Tribe (U16 and U19 divisions), played for Al Nasr Club, and currently compete for RIT Dubai. My athletic development includes international tournaments across Europe and the GCC, as well as high-intensity training at Combine Academy in North Carolina, USA.' },
   { q: 'How does Neil bridge finance theory with the tools behind it?', a: 'Instead of relying on aggregated commercial datasets with opaque methodology, I engineer custom extraction harnesses that scrape, parse, and structure primary source government and corporate filings (DEA reports, reserve bank auction notices, EU CBAM annexes). This end-to-end provenance guarantees complete methodological transparency and reproducible statistical findings.' },
 ]

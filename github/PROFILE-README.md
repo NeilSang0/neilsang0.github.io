@@ -23,7 +23,7 @@ driven almost entirely by one constituent. Code: [cbam-uae-note](https://github.
 
 ## Building
 
-**[Bindler](https://bindler.pages.dev)** — source-cited Excel workbooks for
+**[Bindler](https://bindler.co)** — source-cited Excel workbooks for
 sustainability disclosure, climate reporting and project finance. EU disclosure
 (CSRD double materiality, SFDR PAI, EU Taxonomy, CBAM cost, EU AI Act), climate
 and emissions (GHG Protocol, PCAF, IFRS S2, transition plan, green bond

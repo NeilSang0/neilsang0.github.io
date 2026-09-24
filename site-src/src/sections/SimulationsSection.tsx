@@ -4,7 +4,7 @@ import { SIMULATIONS } from '../content'
 
 export default function SimulationsSection() {
   return (
-    <Section id="simulations" tone="light" title="Simulations" kicker="18 Forage programmes issued by global firms" z={50}>
+    <Section id="simulations" tone="light" title="Virtual Experiences" kicker="18 Forage programmes issued by global firms" z={50}>
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 md:gap-8">
         {SIMULATIONS.map((t, i) => (
           <FadeIn key={t.track} delay={i * 0.12} className="flex flex-col">
