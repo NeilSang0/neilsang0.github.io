@@ -87,6 +87,7 @@ export const SIMULATIONS = [
 ]
 export const HONOURS = [
   { title: 'Elite basketball athlete & team captain', sub: 'Al Nasr Club · Dubai Tribe U16 & U19 · RIT Dubai men\'s team · 2018 to present', text: "6'6\" starting forward/center. Captained Dubai Tribe across both U16 and U19 divisions. Competed internationally in European club tournaments in Austria and GCC tournaments in Oman. Selected for elite athlete development at Combine Academy in North Carolina, USA. Recipient of multiple tournament MVP citations." },
+  { title: 'Certificate of Recognition, CBI Hackathon', sub: 'Commercial Bank International · 24 September 2026', text: 'Recognised for successful participation in the CBI Hackathon, run by Commercial Bank International in the UAE.' },
   { title: '1st place overall, Deloitte Business Simulation', sub: 'Edumundo · Oct 2025', text: 'Ranked 1st among all participating university teams internationally in financial ratio analysis, capital allocation and sustained profitability.' },
   { title: 'Selected participant, Entrepreneurship Bootcamp', sub: 'RIT Dubai · Feb 2026', text: 'Completed intensive Harvard Business Impact Simulation on high-velocity venture building, market scaling and early-stage cap table management.' },
   { title: 'Co-Chair, G20 Committee', sub: 'Model United Nations · 2023', text: 'Moderated multilateral economic policy debates, financial stability directives and sovereign debt restructuring resolutions for diplomatic delegates.' },
