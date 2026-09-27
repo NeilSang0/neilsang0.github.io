@@ -12,14 +12,14 @@ function Card({ p, index, total, progress }: { p: (typeof PROJECTS)[number]; ind
     <div className="h-[85vh] flex items-start justify-center sticky top-24 md:top-32" style={{ top: `calc(6rem + ${index * 28}px)` }}>
       <motion.article
         style={{ scale, background: '#0C0C0C' }}
-        className="w-full max-w-6xl rounded-[40px] sm:rounded-[50px] md:rounded-[60px] border-2 border-[#D7E2EA] p-4 sm:p-6 md:p-8 flex flex-col gap-4 sm:gap-6 origin-top"
+        className="w-full max-w-5xl rounded-[40px] sm:rounded-[50px] md:rounded-[60px] border-2 border-[#D7E2EA] p-4 sm:p-6 md:p-8 flex flex-col gap-4 sm:gap-6 origin-top"
       >
         <div className="flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-4 sm:gap-6">
-            <span className="hero-heading font-black leading-none" style={{ fontSize: 'clamp(2.4rem, 8vw, 110px)' }}>0{index + 1}</span>
+            <span className="hero-heading font-black leading-none" style={{ fontSize: 'clamp(1.9rem, 6.2vw, 86px)' }}>0{index + 1}</span>
             <div>
               <div className="text-[#D7E2EA] font-light uppercase tracking-widest text-xs sm:text-sm opacity-70">{p.category}</div>
-              <h3 className="text-[#D7E2EA] font-medium uppercase leading-tight" style={{ fontSize: 'clamp(1.05rem, 2.2vw, 2rem)' }}>{p.name}</h3>
+              <h3 className="text-[#D7E2EA] font-medium uppercase leading-tight" style={{ fontSize: 'clamp(1rem, 1.9vw, 1.7rem)' }}>{p.name}</h3>
             </div>
           </div>
           <LiveProjectButton href={p.href} />
@@ -40,8 +40,8 @@ export default function ProjectsSection() {
   const ref = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end end'] })
   return (
-    <section id="projects" className="relative rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 px-6 sm:px-10 md:px-14 pt-16 sm:pt-20 md:pt-24 pb-20 sm:pb-24" style={{ background: '#0C0C0C', zIndex: 10 }}>
-      <FadeIn as="h2" y={40} className="hero-heading font-black uppercase text-center leading-none tracking-tight mb-8 sm:mb-10" style={{ fontSize: 'clamp(2.4rem, 9.5vw, 128px)' }}>
+    <section id="projects" className="relative rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 px-6 sm:px-10 md:px-16 lg:px-20 pt-16 sm:pt-20 md:pt-24 pb-20 sm:pb-24" style={{ background: '#0C0C0C', zIndex: 10 }}>
+      <FadeIn as="h2" y={40} className="hero-heading font-black uppercase text-center leading-none tracking-tight mb-8 sm:mb-10" style={{ fontSize: 'clamp(2rem, 7.5vw, 104px)' }}>
         Project
       </FadeIn>
       <div ref={ref}>

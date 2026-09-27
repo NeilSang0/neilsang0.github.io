@@ -72,5 +72,7 @@ Neil ruled this site is the founder "about" page for Solandor and Bindler, so
 both now link here and share the entity ID `https://neilsang0.github.io/#person`
 (Solandor `lib/site.ts` + `components/public/structured-data.tsx`; Bindler
 `site/build_site.py` + `site/content/about.md`). The page carries a ProfilePage
-graph with the portrait as `image`; keep `description` equal to the meta
-description. Never add a `sameAs` profile Neil has not confirmed exists.
+graph; keep `description` equal to the meta description. The portrait was
+removed on 27 September 2026 at Neil's request, so there is no `image` node, no
+`og:image`, and `neil.jpg` / `neil-sm.jpg` are deleted (still in git history).
+The hero carries his four figures where the photo used to sit. Never add a `sameAs` profile Neil has not confirmed exists.

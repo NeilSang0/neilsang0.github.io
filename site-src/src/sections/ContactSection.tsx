@@ -12,8 +12,8 @@ const ROUTES = [
 
 export default function ContactSection() {
   return (
-    <footer id="contact" className="relative rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 px-6 sm:px-10 md:px-14 pt-16 sm:pt-20 pb-10" style={{ background: '#FFFFFF', zIndex: 110 }}>
-      <FadeIn as="h2" y={40} className="text-[#0C0C0C] font-black uppercase text-center leading-none tracking-tight" style={{ fontSize: 'clamp(2.4rem, 9.5vw, 128px)' }}>
+    <footer id="contact" className="relative rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 px-6 sm:px-10 md:px-16 lg:px-20 pt-16 sm:pt-20 pb-10" style={{ background: '#FFFFFF', zIndex: 110 }}>
+      <FadeIn as="h2" y={40} className="text-[#0C0C0C] font-black uppercase text-center leading-none tracking-tight" style={{ fontSize: 'clamp(2rem, 7.5vw, 104px)' }}>
         Contact
       </FadeIn>
       <FadeIn delay={0.15} className="max-w-3xl mx-auto mt-12 sm:mt-16 flex flex-col gap-2">
@@ -24,7 +24,7 @@ export default function ContactSection() {
           </a>
         ))}
       </FadeIn>
-      <FadeIn delay={0.3} className="max-w-3xl mx-auto mt-12 text-[#0C0C0C] font-light leading-relaxed" style={{ fontSize: 'clamp(0.8rem, 1.15vw, 0.95rem)', opacity: 0.7 }}>
+      <FadeIn delay={0.3} className="max-w-3xl mx-auto mt-12 text-[#0C0C0C] font-light leading-relaxed" style={{ fontSize: 'clamp(0.78rem, 1vw, 0.9rem)', opacity: 0.7 }}>
         <p className="mt-8 text-xs uppercase tracking-widest opacity-70">Neil Sangwaiya · Dubai, United Arab Emirates</p>
       </FadeIn>
     </footer>
